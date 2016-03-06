@@ -1,0 +1,23 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Home.aspx.cs" Inherits="Chapter03._1_Tai_Khoan_Enitity.Home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateSelectButton="True" OnSelectedIndexChanged="Loadgrid">
+        </asp:GridView>
+    
+        <asp:GridView ID="GridView2" runat="server">
+        </asp:GridView>
+    
+    </div>
+        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Page_Load"/>
+    </form>
+</body>
+</html>

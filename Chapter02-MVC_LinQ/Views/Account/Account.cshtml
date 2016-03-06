@@ -1,0 +1,45 @@
+﻿@*Chỉ dùng cho Store Procedure*@
+@*@model IEnumerable<Chapter02_MVC_LinQ.SelectAccountResult>*@  
+
+@*Chỉ dùng cho database db.Accounts.ToList()*@
+@model IEnumerable<Chapter02_MVC_LinQ.Account>                  
+    @{
+        ViewBag.Title = "Account";
+    }
+
+    <h2>ACCOUNT</h2>
+    @using(Html.BeginForm())
+    {
+        <fieldset>
+
+            <div id="results" class="results">
+
+                <table border="1">
+                    <thead>
+                        <tr class="info">
+                            <th>USER</th>
+                            <th>NAME</th>
+                            <th>PASSWORLD</th>
+                            <th>ACCOUNTTYPE</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var agreement in Model)
+                        {
+                            <tr class="active">
+                                <td>@agreement.ACCOUNTID</td>
+                                <td>@agreement.NAME</td>
+                                <td>@agreement.PASSWORLD</td>
+                                <td>@agreement.ACCOUNTTYPE</td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+
+
+          </fieldset>
+
+    }

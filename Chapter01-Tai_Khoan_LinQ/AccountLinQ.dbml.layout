@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AccountLinQ">
+  <DataContextMoniker Name="/AccountLinQDataContext" />
+  <nestedChildShapes>
+    <classShape Id="76e7cb28-5e2a-412d-84c9-2e0ee68be08f" absoluteBounds="1.125, 1.125, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/AccountLinQDataContext/Account" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2d89c94f-494c-441c-979b-a862570790c3" absoluteBounds="1.1400000000000001, 1.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b197ddd8-1b37-4692-b621-4d87358ef89d" absoluteBounds="1.625, 3.375, 2, 1.3862939453125">
+      <DataClassMoniker Name="/AccountLinQDataContext/AccountType" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8013bd00-f6ab-4572-bff6-776c5aad6745" absoluteBounds="1.6400000000000001, 3.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.375 : 3.375); (2.375 : 2.70359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/AccountLinQDataContext/AccountType/AccountType_Account" />
+      <nodes>
+        <classShapeMoniker Id="b197ddd8-1b37-4692-b621-4d87358ef89d" />
+        <classShapeMoniker Id="76e7cb28-5e2a-412d-84c9-2e0ee68be08f" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
