@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "EditAccount";
+}
+
+<h2>EditAccount</h2>
+@{
+    ViewBag.Title = "TaiKhoan";
+}
+
+@using Chapter03._2_MVC_Entity_TaiKhoan.Models;
+@model Account
+
+<h2>Index</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+    <fieldset>
+        <div class="editor-label">@Html.LabelFor(m => m.ACCOUNTID):</div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.ACCOUNTID)
+            @Html.ValidationMessageFor(m => m.ACCOUNTID)
+        </div>
+        <div class="editor-label">@Html.LabelFor(m => m.NAME):</div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.NAME)
+            @Html.ValidationMessageFor(m => m.NAME)
+        </div>
+        <div class="editor-label">@Html.LabelFor(m => m.PASSWORLD):</div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.PASSWORLD)
+            @Html.ValidationMessageFor(m => m.PASSWORLD)
+        </div>
+        <div class="editor-label">@Html.LabelFor(m => m.ACCOUNTTYPE):</div>
+        <div class="editor-field">
+            @Html.TextBoxFor(m => m.ACCOUNTTYPE)
+            @Html.ValidationMessageFor(m => m.ACCOUNTTYPE)
+        </div>
+    </fieldset>
+}

@@ -32,7 +32,7 @@ namespace Chapter01_Tai_Khoan_LinQ
         {
             string index = GridView1.Rows[GridView1.SelectedIndex].Cells[1].Text;
 
-
+            
             var acc_delete = (from a in ac.Accounts 
                               where a.ACCOUNTID == index
                               select a).First();                                    //loại 1

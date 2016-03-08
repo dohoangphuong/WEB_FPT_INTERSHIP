@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter02-MVC_LinQ", "Chapt
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter03.1-Tai_Khoan_Enitity", "Chapter03.1-Tai_Khoan_Enitity\Chapter03.1-Tai_Khoan_Enitity.csproj", "{295A807B-A45D-4DCA-B91C-F000E4F8E2E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter03.2-MVC_Entity_TaiKhoan", "Chapter03.2-MVC_Entity_TaiKhoan\Chapter03.2-MVC_Entity_TaiKhoan.csproj", "{DD7CE40A-3F26-4D62-9FD6-1A7F1FE8888E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{295A807B-A45D-4DCA-B91C-F000E4F8E2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{295A807B-A45D-4DCA-B91C-F000E4F8E2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{295A807B-A45D-4DCA-B91C-F000E4F8E2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD7CE40A-3F26-4D62-9FD6-1A7F1FE8888E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD7CE40A-3F26-4D62-9FD6-1A7F1FE8888E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD7CE40A-3F26-4D62-9FD6-1A7F1FE8888E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD7CE40A-3F26-4D62-9FD6-1A7F1FE8888E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
