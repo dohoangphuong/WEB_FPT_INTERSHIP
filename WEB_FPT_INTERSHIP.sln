@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter03.1-Tai_Khoan_Eniti
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter03.2-MVC_Entity_TaiKhoan", "Chapter03.2-MVC_Entity_TaiKhoan\Chapter03.2-MVC_Entity_TaiKhoan.csproj", "{DD7CE40A-3F26-4D62-9FD6-1A7F1FE8888E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chapter04-Handson Table", "Chapter04-Handson Table\Chapter04-Handson Table.csproj", "{E3C3BAAD-9520-476A-BDEF-29B21B52F99F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{DD7CE40A-3F26-4D62-9FD6-1A7F1FE8888E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD7CE40A-3F26-4D62-9FD6-1A7F1FE8888E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD7CE40A-3F26-4D62-9FD6-1A7F1FE8888E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C3BAAD-9520-476A-BDEF-29B21B52F99F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C3BAAD-9520-476A-BDEF-29B21B52F99F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C3BAAD-9520-476A-BDEF-29B21B52F99F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C3BAAD-9520-476A-BDEF-29B21B52F99F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

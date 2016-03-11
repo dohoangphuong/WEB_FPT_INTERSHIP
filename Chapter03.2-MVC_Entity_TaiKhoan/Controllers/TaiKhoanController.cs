@@ -16,18 +16,21 @@ namespace Chapter03._2_MVC_Entity_TaiKhoan.Controllers
 
         public ActionResult Index()
         {
-            return View("TaiKhoan", account_all.Account);
+            return View("TaiKhoan3", account_all.Account);
         }
+        
 
         public ActionResult EditAccount()
         {
             return View("EditAccount");
         }
 
-        //[HttpPost]        //chỉ dùng cho post
-        public ActionResult SelectAccount(Account acc)
+       //[HttpPost]
+        public ActionResult SelectAccount(string id)
         {
-            return View("EditAccount", acc);
+
+            Account agreement = account_all.Account.Where(m => m.ACCOUNTID == id).First();
+            return View("EditAccount", agreement);
             // return RedirectToAction("Index"); //trở về hàm "Index" 
         }
     }

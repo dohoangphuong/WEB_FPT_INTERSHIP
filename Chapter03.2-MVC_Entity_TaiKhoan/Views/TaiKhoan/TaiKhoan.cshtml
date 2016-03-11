@@ -3,37 +3,40 @@
     ViewBag.Title = "TaiKhoan";
 }
 
+<script src="~/Script/jquery.unobtrusive-ajax.min.js"></script>
 <h2>Index</h2>
 
-@using (Html.BeginForm())
-{
-    @Html.ValidationSummary(true)
-    <div id="results" class="results">
-        <table border="1">
-            <thead>
-                <tr class="info">
-                    <th>USER</th>
-                    <th>NAME</th>
-                    <th>PASSWORLD</th>
-                    <th>ACCOUNTTYPE</th>
-                </tr>
-            </thead>
+@using(Html.BeginForm())
+{ 
+@Html.ValidationSummary(true)
+<div id="results" class="results">
+    <table border="1">
+        <thead>
+            <tr class="info">
+                <th>USER</th>
+                <th>NAME</th>
+                <th>PASSWORLD</th>
+                <th>ACCOUNTTYPE</th>
+            </tr>
+        </thead>
 
-            <tbody>
-                @foreach (var agreement in Model)
-                    {
-                    <tr class="active">
-                        <td>@agreement.ACCOUNTID</td>
-                        <td>@agreement.NAME</td>
-                        <td>@agreement.PASSWORLD</td>
-                        <td>@agreement.ACCOUNTTYPE</td>
-                        <td>
-                            <input type="button" value="Select" onclick="location.href='@Url.Action("SelectAccount", "TaiKhoan", agreement)'" />
-                            <input type="button" value="Delete" />
-                        </td>
-                    </tr>
-                    }
-            </tbody>
-        </table>
-    </div>
+        <tbody>
+
+            @foreach (var agreement in Model)
+            {
+                <tr class="active">
+                    <td>@agreement.ACCOUNTID</td>
+                    <td>@agreement.NAME</td>
+                    <td>@agreement.PASSWORLD</td>
+                    <td>@agreement.ACCOUNTTYPE</td>
+                    <td>                        
+                        @Ajax.ActionLink("Select", "SelectAccount", "TaiKhoan", new { @id = agreement.ACCOUNTID }, new AjaxOptions() { HttpMethod = "POST" }, null)
+
+                        <input id="Delete" type="button" value="Delete" />
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
 }
